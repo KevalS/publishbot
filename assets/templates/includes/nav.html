@@ -1,0 +1,17 @@
+<!-- navbar code start here -->
+<nav class="container" id="nav" ng-controller="navController">
+	<div class="row">
+		<div class="column column-25">
+			<a ng-href="#/">Jekyll editor</a>
+		</div>
+		<div class="column column-50 column-offset-25">
+			<ul class="inline right">
+				<li><a href="https://github.com/georoot/jekyll-editor">Github</a></li>
+				<!-- <li><a href="#github" ng-if="authenticated == 'false'">Documentation</a></li> -->
+				<li><a href="" ng-if="authenticated != 'false'" ng-href="#/new">+ New post</a></li>
+				<li><button class="button-primary button-outline" ng-if="authenticated != 'false'" ng-click="logout()">Logout</button></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- navbar code ends here
